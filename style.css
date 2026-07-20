@@ -1,70 +1,86 @@
 /* Allgemeines Layout */
 body {
         font-family: Arial, sans-serif ;
+        background-color: silver;
 
 }
 
 /* Überschrift 1 */ 
 H1 {
         text-align: center;
-        border: 4px solid black;     /* Erstellt einen Rahmen um die Überschrift */
-        border-radius: 10px;
-        width: 20%;
-        margin: auto;
+        background: linear-gradient(to right,#3498db, #304255);                 /* Erstellt einen optischen Farbwechsel im hintergrund des Rahmens*/
+        border: 4px solid black;                                                  /* Erstellt einen Rahmen um die Überschrift */
+        border-radius: 10px;                                                        /* Abrundung des Rahmens von der Überschrift */
+        width: 20%;                                                                 /* Größe des Rahmens */
+        margin: auto;                                                               /* Ausrichtung vom Rahmen: Mittig */
+        margin-bottom: 75px;                                                        /* Abstand nach unten */
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)                                 /* Schattierung des Rahmens */
 }
 
 /* Überschrift 2 */
-h2 {
+h2 {    
         text-align: center;
-        border: 4px solid black;     /* Erstellt einen Rahmen um die Überschrift */
-        border-radius: 10px;
-        width: 16%;
-        margin: auto;
+        border: 4px solid black;                                                  /* Erstellt einen Rahmen um die Überschrift */
+        background: linear-gradient(to right,#3498db, #304255);                 /* Erstellt einen optischen Farbwechsel im hintergrund des Rahmens*/
+        border-radius: 10px;                                                        /* Abrundung des Rahmens von der Überschrift */
+        width: 16%;                                                                 /* Größe des Rahmens */
+        margin: auto;                                                               /* Ausrichtung vom Rahmen: Mittig */
+        margin-top: 50px;                                                           /* Abstand nach Oben */
+        margin-bottom: 50px;                                                        /* Abstand nach unten */                    
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)                                 /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
 }
 
 /* Erster Text */
 article {
-        text-align: center;
+        background-color: #718297;                      /* Hintergrundfarbe */                                      /* Abstand nach Unten */
+        text-align: center;                               /* Text mittig zentrieren */
+        width: 80%;                                                  
+        margin: auto;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)       /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
+                                                                      
+        
 }
 
 /* Kalender-Tabelle */
 table {
-        border-radius: 10px;            /* Abrundung des Kalenders */ 
-        overflow: hidden;               /* Alles was nicht mehr in die Tabellen box passt wird nicht angezeigt */
-        width: 50%;                     /* Größe der Tabelle */
-        border-collapse: collapse;      /* Verhindert Doppellinien bei aneinanderliegenden Zellen */
-        table-layout: fixed;            /* erzwingt gleiche Spaltenbreiten */
-        margin: auto;                   /* Zentriert die Tabelle miittig */
-        box-shadow:12px 15px 10px rgba(0,0,0,0.3)  /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
-        
+        border-radius: 10px;                              /* Abrundung des Kalenders */ 
+        overflow: hidden;                                 /* Alles was nicht mehr in die Tabellen box passt wird nicht angezeigt */
+        width: 50%;                                       /* Größe der Tabelle */
+        border-collapse: collapse;                        /* Verhindert Doppellinien bei aneinanderliegenden Zellen */
+        table-layout: fixed;                              /* erzwingt gleiche Spaltenbreiten */
+        margin: auto;                                     /* Zentriert die Tabelle miittig */
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)       /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
 }
    
 
 /* Überschriften */ 
 th {
-        background-color: grey;
-        color: whitesmoke;
-        padding: 10px;
-        border: 1px solid black;
+        background-color: grey;                         /* Hintergrundfarbe Table Head */
+        color: black;                                   /* Schriftfarbe */                              
+        padding: 10px;                                    /* Abstand von Schrift nach oben und unten zum Rahmen */  
+        border: 4px solid black;
         text-align: center;
 }
 
 /* Kalenderzellen */
 td {
-        background-color: floralwhite;
+        background-color: #718297;
         height: 80px;
-        border: 1px solid black;        /* Linien im Kalender */
-        text-align: center;               /* horizontal zentriert */
-        vertical-align: middle;           /* vertikal zentriert */
-        transition: background-color 0.3s ease,
+        border: 4px solid black;                                    /* Linien im Kalender */
+        text-align: center;                                           /* horizontal zentriert */
+        vertical-align: middle;                                       /* vertikal zentriert */
+        transition: background-color 0.3s ease,                       /* Hintergrundfarbe ändert sich innerhalb von 0.3s */ 
+                    transform 0.2s ease;                              /* Größe oder Position änderung wird innerhalb von 0.2s Animiert */
                     transform 0.2s ease;
 }
 
 /* Hover-Effekt */
 td:hover {
-        background-color: #718297;
-        transform: scale(1.03);
-        cursor: pointer;
+        background-color: #474747;                                 /* Hintergrundfarbe der Animation */                                 
+        transform: scale(1.03);                                      /* Die ausgewählte Animationsfläche ändert sich um 3% */
+        cursor: pointer;                                             /* Mauszeiger zeigt Auswahl an */
 }
 
 /* Samstag */
@@ -86,9 +102,15 @@ td:hover {
         font-weight: bold;
 }
 
-ul {
-        padding-left: 200px;     /* Abstand nach links von den Stichpunkten */
-        margin-top: 40px;        /* Abstand nach Oben */     
+ul {        
+        margin-top: 40px;        /* Abstand nach Oben */
+        background-color: #718297;
+        width: 80%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)       /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
+ 
+            
 }
 
 li {
