@@ -4,6 +4,29 @@ body {
 
 }
 
+/* Überschrift 1 */ 
+H1 {
+        text-align: center;
+        border: 4px solid black;     /* Erstellt einen Rahmen um die Überschrift */
+        border-radius: 10px;
+        width: 20%;
+        margin: auto;
+}
+
+/* Überschrift 2 */
+h2 {
+        text-align: center;
+        border: 4px solid black;     /* Erstellt einen Rahmen um die Überschrift */
+        border-radius: 10px;
+        width: 16%;
+        margin: auto;
+}
+
+/* Erster Text */
+article {
+        text-align: center;
+}
+
 /* Kalender-Tabelle */
 table {
         border-radius: 10px;            /* Abrundung des Kalenders */ 
@@ -11,12 +34,13 @@ table {
         width: 50%;                     /* Größe der Tabelle */
         border-collapse: collapse;      /* Verhindert Doppellinien bei aneinanderliegenden Zellen */
         table-layout: fixed;            /* erzwingt gleiche Spaltenbreiten */
-        margin: auto;
-        box-shadow:12px 15px 10px rgba(3, 2, 2, 0.2)  
+        margin: auto;                   /* Zentriert die Tabelle miittig */
+        box-shadow:12px 15px 10px rgba(0,0,0,0.3)  /* Erstellt einen Schatten um die Tabelle. 12px = Verschiebung nach links/rechts, 15px = Schatten nach unten, 10px = Unschärfe, 0.2 = Transparenz */
         
 }
+   
 
-/* Überschriften */
+/* Überschriften */ 
 th {
         background-color: grey;
         color: whitesmoke;
@@ -29,9 +53,9 @@ th {
 td {
         background-color: floralwhite;
         height: 80px;
-        border: 1px solid black;  /* Linien im Kalender */
-        text-align: center;             /* horizontal zentriert */
-        vertical-align: middle;         /* vertikal zentriert */
+        border: 1px solid black;        /* Linien im Kalender */
+        text-align: center;               /* horizontal zentriert */
+        vertical-align: middle;           /* vertikal zentriert */
         transition: background-color 0.3s ease,
                     transform 0.2s ease;
 }
@@ -61,6 +85,16 @@ td:hover {
         border: 3px solid orange;
         font-weight: bold;
 }
+
+ul {
+        padding-left: 200px;     /* Abstand nach links von den Stichpunkten */
+        margin-top: 40px;        /* Abstand nach Oben */     
+}
+
+li {
+       margin-bottom: 30px;
+}
+
 
 
 
