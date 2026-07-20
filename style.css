@@ -1,4 +1,61 @@
+/* Allgemeines Layout */
 body {
-        background-color: grey;
-    
+        font-family: Arial, sans-serif ;
+
 }
+
+/* Kalender-Tabelle */
+table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;            /* erzwingt gleiche Spaltenbreiten */
+}
+
+/* Überschriften */
+th {
+        background-color: brown;
+        color: whitesmoke;
+        padding: 10px;
+        border: 1px solid lawngreen;
+        text-align: center;
+}
+
+/* Kalenderzellen */
+td {
+        height: 80px;
+        border: 1px solid lawngreen;  /* Linien im Kalender */
+        text-align: center;             /* horizontal zentriert */
+        vertical-align: middle;         /* vertikal zentriert */
+        transition: background-color 0.3s ease,
+                    transform 0.2s ease;
+}
+
+/* Hover-Effekt */
+td:hover {
+        background-color: #dbeafe;
+        transform: scale(1.03);
+        cursor: pointer;
+}
+
+/* Samstag */
+.samstag {
+        color: blue;
+        font-weight: bold;
+}
+
+/* Sonntag */
+.sonntag {
+        color: red;
+        font-weight: bold;
+}
+
+/* Aktueller Tag */
+.heute {
+        background-color: gold;
+        border: 3px solid orange;
+        font-weight: bold;
+
+}
+
+
+
