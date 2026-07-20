@@ -1,7 +1,7 @@
 /* Allgemeines Layout */
 body {
-        font-family: Arial, sans-serif ;
-        background-color: silver;
+        font-family: Arial, sans-serif ;                                             /* Legt die Schriftart fest und eine ausweichmöglichkeit */
+        background-color: silver;                                                  /* Hintergrundfarbe der Ganzen Seite */
 
 }
 
@@ -64,20 +64,20 @@ th {
         background-color: grey;                         /* Hintergrundfarbe Table Head */
         color: black;                                   /* Schriftfarbe */                              
         padding: 10px;                                    /* Abstand von Schrift nach oben und unten zum Rahmen */  
-        border: 4px solid black;
-        text-align: center;
+        border: 4px solid black;                        /* Linien im Kalender */
+        text-align: center;                               /* Setzt den Text in die Mitte */
 }
 
 /* Kalenderzellen */
 td {
-        background-color: #718297;
-        height: 80px;
+        background-color: #718297;                                  /* Hintergrundfarbe */
+        height: 80px;                                                 /* Höhe der Zellen */                                                     
         border: 4px solid black;                                    /* Linien im Kalender */
         text-align: center;                                           /* horizontal zentriert */
         vertical-align: middle;                                       /* vertikal zentriert */
         transition: background-color 0.3s ease,                       /* Hintergrundfarbe ändert sich innerhalb von 0.3s */ 
                     transform 0.2s ease;                              /* Größe oder Position änderung wird innerhalb von 0.2s Animiert */
-                    transform 0.2s ease;
+                    
 }
 
 /* Hover-Effekt */
@@ -89,21 +89,20 @@ td:hover {
 
 /* Samstag */
 .samstag {
-        color: blue;
-        font-weight: bold;
+        color: blue;                                              /* Textfarbe */
+        font-weight: bold;                                          /* Buchstaben Fett darstellen */
 }
 
 /* Sonntag */
 .sonntag {
-        color: red;
-        font-weight: bold;
+        color: red;                                               /* Textfarbe */
+        font-weight: bold;                                          /* Buchstaben Fett darstellen */
 }
 
 /* Aktueller Tag */
 .heute {
-        background-color: gold;
-        border: 3px solid orange;
-        font-weight: bold;
+        background-color: gold;                                  /* Hintergrundfarbe */
+        font-weight: bold;                                         /* Buchstaben Fett darstellen */
 }
 
 ul {        
@@ -120,7 +119,7 @@ ul {
 }
 
 li {
-       margin-bottom: 30px;
+       margin-bottom: 30px;                                        /* Abstand nach unten */
        
 }
 
