@@ -6,24 +6,30 @@ body {
 
 /* Kalender-Tabelle */
 table {
-        width: 100%;
-        border-collapse: collapse;
+        border-radius: 10px;            /* Abrundung des Kalenders */ 
+        overflow: hidden;               /* Alles was nicht mehr in die Tabellen box passt wird nicht angezeigt */
+        width: 50%;                     /* Größe der Tabelle */
+        border-collapse: collapse;      /* Verhindert Doppellinien bei aneinanderliegenden Zellen */
         table-layout: fixed;            /* erzwingt gleiche Spaltenbreiten */
+        margin: auto;
+        box-shadow:12px 15px 10px rgba(3, 2, 2, 0.2)  
+        
 }
 
 /* Überschriften */
 th {
-        background-color: brown;
+        background-color: grey;
         color: whitesmoke;
         padding: 10px;
-        border: 1px solid lawngreen;
+        border: 1px solid black;
         text-align: center;
 }
 
 /* Kalenderzellen */
 td {
+        background-color: floralwhite;
         height: 80px;
-        border: 1px solid lawngreen;  /* Linien im Kalender */
+        border: 1px solid black;  /* Linien im Kalender */
         text-align: center;             /* horizontal zentriert */
         vertical-align: middle;         /* vertikal zentriert */
         transition: background-color 0.3s ease,
@@ -32,7 +38,7 @@ td {
 
 /* Hover-Effekt */
 td:hover {
-        background-color: #dbeafe;
+        background-color: #718297;
         transform: scale(1.03);
         cursor: pointer;
 }
@@ -54,7 +60,6 @@ td:hover {
         background-color: gold;
         border: 3px solid orange;
         font-weight: bold;
-
 }
 
 
